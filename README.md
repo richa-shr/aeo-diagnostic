@@ -65,25 +65,6 @@ For production, update this line in `index.html`:
 : 'https://your-backend-url.onrender.com'
 ```
 
-## Deployment
-
-### Backend → Render
-
-1. Push repo to GitHub
-2. Go to [render.com](https://render.com) → New Web Service
-3. Connect your GitHub repo
-4. Set:
-   - Root directory: `backend`
-   - Build command: `pip install -r requirements.txt`
-   - Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
-5. Add environment variables (`GROQ_API_KEY`, `SERPER_API_KEY`)
-6. Deploy
-
-### Frontend → Netlify
-
-1. Go to [netlify.com](https://netlify.com) → Add new site → Deploy manually
-2. Drag and drop the `frontend/` folder
-3. Done — live URL instantly
 
 ## Project structure
 
